@@ -1,0 +1,151 @@
+body {
+    position: relative;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.rappel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 80px);
+    height: auto;
+    display: none;
+    transition: all 2s ease-in-out;
+    opacity: 0;
+}
+.rappel-displayed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 80px);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 40px;
+    transition: all 2s ease-in-out;
+    opacity: 1;
+}
+.rappel-up {
+    transform: translate(0,0);
+    transition: all .3s ease-in-out;
+}
+.rappel-down {
+    transform: translate(0,85%);
+    transition: all .3s ease-in-out;
+}
+
+.rappel__wrapper {
+    width: 350px;
+    height: auto;
+    background-color: aqua;
+    border-radius: 12px 12px 0 0;
+    background: #FEFEFE;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 1px solid #63BAAB;
+}
+
+.rappel__formFields {
+    display: flex;
+    flex-direction: column;
+}
+
+.rappel__title {
+    position: relative;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #485358;
+    margin: 0 0 12px 0;
+    padding: 0 0 0 60px;
+}
+.rappel__title::before {
+    content: url("images/phone.svg");
+    position: absolute;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    background: #FFE8D1;
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.rappel__title strong {
+    color: #e46700;
+    font-style: italic;
+}
+
+.rappel__description {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    color: #212121;
+    margin: 0 0 24px 0;
+}
+
+.rappel__wrapper input {
+    background: #FEFEFE;
+    border: 1px solid #A2A2A2;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 27px 16px;
+    margin-bottom: 10px;
+}
+.rappel__wrapper input.rappel__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 24px;
+    background: #63BAAB;
+    border-radius: 12px;
+    border: none;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.div1 {
+    height: 100vh;
+}
+.div2 {
+    height: 100vh;
+    background-color: white;
+}
+
+.rappel__switch {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    right: 20px;
+    top: -39px;
+    background: #FFFFFF;
+    border: 1px solid #63BAAB;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 0px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
